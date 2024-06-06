@@ -1,5 +1,7 @@
 package com.example.ee.retrofit;
 
+import com.example.ee.apiInterface.ApiService;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -16,5 +18,9 @@ public class RetrofitClient {
                     .build();
         }
         return retrofit;
+    }
+
+    public static ApiService getApiService() {
+        return getClient().create(ApiService.class);
     }
 }

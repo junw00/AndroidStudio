@@ -1,41 +1,36 @@
 package com.example.ee.entity;
 
+import java.util.List;
+
 public class Restaurant {
+    private int id;
     private String name;
+    private String address;
     private double latitude;
     private double longitude;
-    private String sentiment;
+    private double sentiment;
 
-    // Getters and Setters
+    public String getAddress() {
+        return address;
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public double getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
 
     public double getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
 
-    public String getSentiment() {
+    public double getSentiment() {
         return sentiment;
     }
 
-    public void setSentiment(String sentiment) {
-        this.sentiment = sentiment;
-    }
 }
